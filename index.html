@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Website Fiqih Interaktif</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+      color: #f8fafc;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #1e293b;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .container {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .bab {
+      background: rgba(30, 41, 59, 0.95);
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+      padding: 1rem;
+      box-shadow: 0 2px 10px rgba(255,255,255,0.05);
+    }
+    .bab:hover {
+      background: #334155;
+      transform: scale(1.02);
+    }
+    .isi {
+      display: none;
+      margin-top: 0.75rem;
+      animation: fadeIn 0.5s ease forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h2 {
+      margin: 0;
+    }
+    .arabic {
+      font-size: 1.2rem;
+      direction: rtl;
+      text-align: right;
+      margin: 1rem 0;
+      color: #facc15;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: #1e293b;
+      margin-top: 3rem;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <header>Website Fiqih Interaktif</header>
+  <div class="container">
+
+    <div class="bab" onclick="toggleIsi(this)">
+      <h2>Thaharah</h2>
+      <div class="isi">
+        <p><strong>Pengertian:</strong> Thaharah secara bahasa berarti bersuci. Dalam istilah fiqih, thaharah adalah menghilangkan najis dan hadas dari tubuh, pakaian, atau tempat agar dapat melaksanakan ibadah, terutama shalat.</p>
+        <p class="arabic">الطُّهُورُ شَطْرُ الإِيْمَانِ</p>
+        <p><strong>Terjemah:</strong> "Bersuci adalah sebagian dari iman." (HR. Muslim)</p>
+        <p><strong>Jenis:</strong> Thaharah dari hadas (dengan wudhu atau mandi wajib) dan dari najis (dengan membasuh hingga bersih).</p>
+        <p><strong>Contoh:</strong> Mandi besar setelah haid, membersihkan kotoran dari pakaian, berwudhu sebelum shalat.</p>
+        <p><strong>Penjelasan:</strong> Thaharah sangat penting karena menjadi syarat sah ibadah. Islam sangat menekankan kebersihan dan kesucian sebagai bagian dari keimanan dan ketakwaan. Ada dua jenis najis: najis hukmiyah (tidak tampak) dan najis 'ainiyah (nampak jelas seperti darah atau kotoran).</p>
+      </div>
+    </div>
+
+    <div class="bab" onclick="toggleIsi(this)">
+      <h2>Wudhu</h2>
+      <div class="isi">
+        <p><strong>Pengertian:</strong> Wudhu adalah menggunakan air untuk membasuh anggota tubuh tertentu dengan niat bersuci dari hadas kecil.</p>
+        <p class="arabic">يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا قُمْتُمْ إِلَى الصَّلَاةِ فَاغْسِلُوا وُجُوهَكُمْ...</p>
+        <p><strong>Terjemah:</strong> "Wahai orang-orang yang beriman, apabila kalian hendak melaksanakan shalat, maka basuhlah wajah kalian..." (QS. Al-Ma’idah: 6)</p>
+        <p><strong>Rukun Wudhu:</strong> Niat, membasuh wajah, tangan hingga siku, mengusap kepala, membasuh kaki, dan tertib.</p>
+        <p><strong>Contoh:</strong> Berwudhu sebelum shalat, sebelum membaca Al-Qur’an, sebelum thawaf.</p>
+        <p><strong>Penjelasan:</strong> Wudhu adalah ibadah yang tidak hanya bersifat fisik tetapi juga spiritual. Melalui wudhu, seorang muslim membersihkan diri dari kotoran lahir dan batin. Wudhu juga bisa menjadi penyebab gugurnya dosa kecil, seperti disebutkan dalam banyak hadits shahih.</p>
+      </div>
+    </div>
+
+    <div class="bab" onclick="toggleIsi(this)">
+      <h2>Mandi Wajib</h2>
+      <div class="isi">
+        <p><strong>Pengertian:</strong> Mandi wajib adalah mandi yang dilakukan untuk menghilangkan hadas besar setelah haid, nifas, hubungan suami istri, atau mimpi basah.</p>
+        <p class="arabic">إِذَا جَلَسَ بَيْنَ شُعَبِهَا الأَرْبَعِ ثُمَّ جَهَدَهَا فَقَدْ وَجَبَ الْغُسْلُ</p>
+        <p><strong>Terjemah:</strong> "Jika seseorang duduk di antara empat bagian tubuh istrinya dan bersungguh-sungguh, maka wajib baginya mandi." (HR. Muslim)</p>
+        <p><strong>Contoh:</strong> Seorang wanita selesai haid, seseorang yang mimpi basah, setelah berhubungan suami istri.</p>
+        <p><strong>Penjelasan:</strong> Mandi wajib dilakukan dengan niat mengangkat hadas besar dan menyiram seluruh tubuh dengan air. Disunnahkan untuk memulai dengan berwudhu terlebih dahulu, lalu membasuh bagian kanan dan kiri tubuh. Mandi wajib harus merata tanpa ada bagian tubuh yang terlewat. Ini adalah bentuk ketaatan dan penghormatan terhadap kesucian dalam Islam.</p>
+      </div>
+    </div>
+
+  </div>
+  <footer>
+    Kelompok: Bintang Taqbiransyah Ramadhan /35, M. Hafizh, M. Fahmi Rizkullah
+  </footer>
+  <script>
+    function toggleIsi(el) {
+      const isi = el.querySelector('.isi');
+      const tampil = isi.style.display === 'block';
+      document.querySelectorAll('.isi').forEach(div => div.style.display = 'none');
+      if (!tampil) {
+        isi.style.display = 'block';
+        el.classList.add('aktif');
+      } else {
+        el.classList.remove('aktif');
+      }
+    }
+  </script>
+</body>
+</html>
